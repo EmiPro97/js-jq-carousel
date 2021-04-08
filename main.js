@@ -16,8 +16,12 @@ $(document).ready(function() {
 
 
     // Next with keydown
-    $(document).keydown(function(){
-        
+    $(document).keydown(function(e){
+        if(e.keyCode == 37) {
+            slidePrevNext('prev');
+        }else if (e.keyCode == 39){
+            slidePrevNext('next');
+        }
     });
 
 //document ready end    
